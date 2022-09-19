@@ -1,3 +1,6 @@
+.mobile{
+    display: none !important;
+}
 body{
     margin: 0px;
     font-family: sans-serif;
@@ -105,4 +108,124 @@ footer{
     height: 25px;
     filter: invert();
     background-color: transparent;
+}
+
+@media (max-width: 480px){
+    .mobile{
+        display: block !important;
+    }
+    .desktop{
+        display: none !important;
+    }
+
+
+
+
+    .button1{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        margin-left: 0px;
+        text-decoration: none;
+    }
+    
+    .button1 .arrowInfo{
+        width: 130px;
+        height: 15px;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        vertical-align: middle;
+        background-color: var(--myBlack);
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: monospace;
+        font-size: 18px;
+    }
+    
+    .arrow{
+        width: 10px;
+        height: 15px;
+        padding-top: 18px;
+        padding-bottom: 17px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: var(--myBrown);
+    }
+    
+    
+    
+    
+    
+    #map{
+        width: 100%;
+    }
+    section{
+        height: fit-content;
+        width: 100%;
+        background-color: var(--myBlack);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        column-gap: 10px;
+        justify-content: center;
+    }
+    #sectionTitle{
+        width: 95%;
+        text-transform: uppercase;
+        margin-left: 0px;
+        padding-left: 20px;
+        margin-top: 10px;
+        font-size: 35px;
+        font-family: monospace;
+        font-weight: bolder;
+    }
+    #sectionDesc{
+        margin-top: 0px;
+        width: 95%;
+        padding-left: 20px;
+        font-size: 1.2rem;
+        padding-bottom: 20px;
+    }
+    #sectionDesc h1{
+        color: var(--myBrown);
+        font-weight: bolder;
+        text-transform: uppercase;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 30px;
+    }
+    
+    
+    
+    
+    footer{
+        height: max-content;
+        width: 94%;
+        background-color: var(--myBrown);
+        color: var(--myBlack);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+        column-gap: 20px;
+        padding-left: 20px;
+    }
+    #footerTitle{
+        width: 95%;
+        text-transform: uppercase;
+    }
+    #footerDesc{
+        width: 95%;
+        margin-top: 20px;
+    }
+    #social{
+        width: 95%;
+    }
+    #social img{
+        width: 25px;
+        height: 25px;
+        filter: invert();
+        background-color: transparent;
+    }
 }

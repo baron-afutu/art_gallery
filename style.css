@@ -1,3 +1,6 @@
+.mobile{
+    display: none !important;
+}
 body{
     margin: 0px;
     font-family: sans-serif;
@@ -18,16 +21,16 @@ header{
 
 #leftSide{
     background-color: var(--myBlack);
-    width: 33vw;
+    width: 30vw;
     min-width: 0px;
 }
-#rightSide{
+#rightSid{
     background-color: white;
-    width: 33vw;
+    width: 30vw;
     min-width: 0px;
 }
-#heroImage{
-    min-width: 34vw;
+.heroImage{
+    min-width: 40vw;
     max-width: 100%;
     background-color: white;
 }
@@ -169,4 +172,189 @@ footer{
     height: 25px;
     background-color: var(--myBlack);
     align-self:flex-start;
+}
+
+@media (max-width: 480px){
+    .desktop{
+        display: none !important;
+    }
+    .mobile{
+        display: block !important;
+    }
+    .imageBackground{
+        display: block;
+        width: 100%;
+        height: fit-content;
+    }
+    
+    #leftSide{
+        display: none;
+    }
+    #rightSide{
+        display: none;
+    }
+    .heroImage{
+        width: 100%;
+    }
+
+
+    .textOverlay{
+        position: relative;
+        top: 0;
+        z-index: 0;
+        display: block;
+        flex-direction: none;
+        height: fit-content;
+        padding-top: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 95%;
+    }
+    
+    #title{
+        text-transform: uppercase;
+        width: 100%;
+        margin-left: 10px;
+        height: fit-content;
+        background-image: none;
+        background-clip: content-box;
+        -webkit-background-clip: text;
+        color: var(--myBlack);
+        letter-spacing:2px;
+        font-weight:bolder;
+        font-size: 40px;
+    }
+    
+    .right{
+        width: 100%;
+        margin-left: 0px;
+    }
+    
+    .button1{
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        text-decoration: none;
+    }
+    
+    .button1 .arrowInfo{
+        width: 130px;
+        height: 15px;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        vertical-align: middle;
+        background-color: var(--myBlack);
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: monospace;
+        font-size: 18px;
+    }
+    
+    .arrow{
+        width: 10px;
+        height: 15px;
+        padding-top: 18px;
+        padding-bottom: 17px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: var(--myBrown);
+    }
+
+
+
+
+    #topRow{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 10px;
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+    #imageGrid1, #imageGrid2, #imageGrid3{
+        width: 100%;
+    }
+    #bottomRow{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        margin-top: 20px;
+    }
+    #rightSide{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    #textArea h1{
+        text-transform: uppercase;
+        font-family: monospace;
+        font-size: 3rem;
+        font-weight: bolder;
+        margin-bottom: 10px;
+    }
+    #textArea{
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        font-family: sans-serif;
+        font-size: 1.2rem;
+    }
+    
+    #textB{
+        width: 95%;
+        background-color: var(--myBlack);
+        color: white;
+        padding: 10px;
+        margin-top: 20px;
+        height: 320px;
+        font-size: 1.5rem;
+    }
+    #textB h1{
+        margin-top: 30px;
+        text-transform: uppercase;
+        font-size: 3rem;
+    }
+
+
+
+
+
+    footer{
+        height: max-content;
+        width: 100%;
+        background-color: var(--myBlack);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+        column-gap: 20px;
+    }
+    
+    #footerTitle{
+        width: 94%;
+        text-transform: uppercase;
+        padding-left: 20px;
+    }
+    #footerDesc{
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: 1.2em;
+    }
+    #social{
+        width: 100%;
+        margin-left: 20px;
+    }
+    #social img{
+        width: 25px;
+        height: 25px;
+        background-color: var(--myBlack);
+        align-self:flex-start;
+    }
 }
