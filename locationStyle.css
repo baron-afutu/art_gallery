@@ -3,7 +3,7 @@
 }
 body{
     margin: 0px;
-    font-family: sans-serif;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
     --myBlack: #151515;
     --myBrown: #d5966c;
     --myGray: #444444;
@@ -37,7 +37,7 @@ section{
 #sectionTitle{
     width: 40%;
     text-transform: uppercase;
-    margin-left: 10%;
+    margin-left: 40px;
 }
 #sectionTitle h1{
     font-family: 'Big Shoulders Display';
@@ -66,7 +66,7 @@ footer{
     height: 200px;
     width: 100%;
     background-color: var(--myBrown);
-    color: white;
+    color: black;
     display: flex;
     flex-direction: row;
     padding-top: 40px;
@@ -81,19 +81,24 @@ footer{
     font-family: 'Big Shoulders Display';
     font-size: 36px;
     line-height: 36px;
-    margin-left: 100px;
+    margin-left: 135px;
 }
 #footerDesc{
     margin-top: 20px;
 }
 #social{
     width: 40%;
+    margin-right: 60px;
 }
 #social img{
     width: 25px;
     height: 25px;
-    background-color: var(--myBrown);
+    background-color: transparent;
+    filter: invert();
     align-self:flex-start;
+}
+#social img:hover{
+    filter: none;
 }
 @media (max-width: 480px){
     .mobile{
@@ -127,6 +132,7 @@ footer{
         text-transform: uppercase;
         font-family: monospace;
         font-size: 18px;
+        line-height: 20px;
     }
     
     .arrow{
@@ -166,6 +172,10 @@ footer{
         font-family: monospace;
         font-weight: bolder;
     }
+    #sectionTitle h1{
+        font-size: 60px;
+        line-height: 62px;
+    }
     #sectionDesc{
         margin-top: 0px;
         width: 95%;
@@ -175,10 +185,10 @@ footer{
     }
     #sectionDesc h1{
         color: var(--myBrown);
-        font-weight: bolder;
+        font-weight: bold;
         text-transform: uppercase;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 30px;
+        font-family: 'Big Shoulders Display';
+        font-size: 40px;
     }
     
     
@@ -191,7 +201,7 @@ footer{
         color: var(--myBlack);
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         padding-top: 40px;
         column-gap: 20px;
         padding-left: 20px;
@@ -199,16 +209,19 @@ footer{
     #footerTitle{
         width: 95%;
         text-transform: uppercase;
+        font-weight: bold;
     }
     #footerTitle h1{
-        margin-left: 10px;
+        margin-left: 0px;
     }
     #footerDesc{
-        width: 95%;
+        width: 85%;
         margin-top: 20px;
+        margin-left: 0px;
     }
     #social{
-        width: 95%;
+        width: 65%;
+        margin-left: 0px;
     }
     #social img{
         width: 25px;

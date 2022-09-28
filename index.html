@@ -30,10 +30,13 @@
             The arts in the collection of the Modern Art Gallery all started from a
             spark of inspiration. Will these pieces inspire you? Visit us and find out.
           </div>
-          <a class="button1" href="location.html">
-            <div class="arrowInfo"><span>Our location</span></div>
-            <img src="./assets/icon-arrow-right.svg" class="arrow" alt="">
-          </a>
+          <div id="hoverBtn" onmouseenter="changeColor()" onmouseleave="revertColor()">
+            <a class="button1" href="location.html">
+              <div class="arrowInfo"><span>Our location</span></div>
+              <img src="./assets/icon-arrow-right.svg" class="arrow" alt="">
+            </a>
+          </div>
+
 
         </div>
 
@@ -88,4 +91,17 @@
 
   </main>
 </body>
+<script>
+  let changeColor = (e) => {
+    let children = document.getElementById('hoverBtn');
+    children.getElementsByTagName('div')[0].classList.add("hover-to-brown");
+    children.getElementsByTagName('img')[0].classList.add("hover-to-black");
+  }
+  let revertColor = (e) => {
+    let children = document.getElementById('hoverBtn');
+    children.getElementsByTagName('div')[0].classList.remove("hover-to-brown");
+    children.getElementsByTagName('img')[0].classList.remove("hover-to-black");
+  }
+</script>
+
 </html>

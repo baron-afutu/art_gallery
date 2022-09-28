@@ -18,19 +18,20 @@
 </head>
 
 <body>
-  <a class="button1" href="index.html">
-    <img src="./assets/icon-arrow-left.svg" class="arrow" alt="">
-    <div class="arrowInfo"><span>Back to Home</span></div>
-  </a>
+  <div id="hoverBtn" onmouseenter="changeColor()" onmouseleave="revertColor()">
+    <a class="button1" href="index.html">
+      <img src="./assets/icon-arrow-left.svg" class="arrow" alt="">
+      <div class="arrowInfo"><span>Back to Home</span></div>
+    </a>
+  </div>
   <section>
-    <img src="./assets/desktop/image-map@2x.png" alt="map" id="map"
-    class="desktop">
-    <img src="./assets/mobile/image-map@2x.png" alt="map" id="map"
-    class="mobile">
+    <img src="./assets/desktop/image-map@2x.png" alt="map" id="map" class="desktop">
+    <img src="./assets/mobile/image-map@2x.png" alt="map" id="map" class="mobile">
   </section>
   <section>
     <div id="sectionTitle">
-      <h1>Our<br>location</h1>
+      <h1 class="desktop">Our<br>location</h1>
+      <h1 class="mobile">Our location</h1>
     </div>
 
     <div id="sectionDesc">
@@ -48,7 +49,7 @@
 
   <footer>
     <div id="footerTitle">
-      <h1>Modern Art Gallery</h1>
+      <h1>Modern<br>Art Gallery</h1>
     </div>
 
     <div id="footerDesc">
@@ -63,5 +64,16 @@
     </div>
   </footer>
 </body>
-
+<script>
+  let changeColor = (e) => {
+    let children = document.getElementById('hoverBtn');
+    children.getElementsByTagName('div')[0].classList.add("hover-to-brown");
+    children.getElementsByTagName('img')[0].classList.add("hover-to-black");
+  }
+  let revertColor = (e) => {
+    let children = document.getElementById('hoverBtn');
+    children.getElementsByTagName('div')[0].classList.remove("hover-to-brown");
+    children.getElementsByTagName('img')[0].classList.remove("hover-to-black");
+  }
+</script>
 </html>
