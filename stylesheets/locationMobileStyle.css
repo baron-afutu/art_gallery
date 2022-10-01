@@ -1,110 +1,11 @@
-.mobile{
-    display: none !important;
-}
-body{
-    margin: 0px;
-    font-family: Calibri, 'Trebuchet MS', sans-serif;
-    --myBlack: #151515;
-    --myBrown: #d5966c;
-    --myGray: #444444;
-}
-.button1{
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    margin-left: 100px;
-    text-decoration: none;
-    margin-top: 0px !important;
-}
-
-
-
-
-
-#map{
-    width: 100%;
-}
-section{
-    height: 500px;
-    width: 100%;
-    background-color: var(--myBlack);
-    color: white;
-    display: flex;
-    flex-direction: row;
-    column-gap: 20px;
-    justify-content: center;
-}
-#sectionTitle{
-    width: 40%;
-    text-transform: uppercase;
-    margin-left: 40px;
-}
-#sectionTitle h1{
-    font-family: 'Big Shoulders Display';
-    font-size: 96px;
-    line-height: 88px;
-    font-weight: bold;
-}
-#sectionDesc{
-    margin-top: 50px;
-    width: 40%;
-}
-#sectionDesc h1{
-    color: var(--myBrown);
-    font-family: 'Big Shoulders Display';
-    font-size: 60px;
-    line-height: 60px;
-    margin: 0px;
-    font-weight: bold;
-}
-#sectionDesc p{
-    margin: 0px;
-}
-
-
-footer{
-    height: 200px;
-    width: 100%;
-    background-color: var(--myBrown);
-    color: black;
-    display: flex;
-    flex-direction: row;
-    padding-top: 40px;
-    column-gap: 20px;
-}
-
-#footerTitle{
-    width: 60%;
-}
-#footerTitle h1{
-    text-transform: uppercase;
-    font-family: 'Big Shoulders Display';
-    font-size: 36px;
-    line-height: 36px;
-    margin-left: 135px;
-}
-#footerDesc{
-    margin-top: 20px;
-}
-#social{
-    width: 40%;
-    margin-right: 60px;
-}
-#social img{
-    width: 25px;
-    height: 25px;
-    background-color: transparent;
-    filter: invert();
-    align-self:flex-start;
-}
-#social img:hover{
-    filter: none;
-}
 @media (max-width: 480px){
     .mobile{
         display: block !important;
     }
     .desktop{
+        display: none !important;
+    }
+    .tablet{
         display: none !important;
     }
 
@@ -120,11 +21,11 @@ footer{
     }
     
     .button1 .arrowInfo{
-        width: 130px;
+        width: 180px;
         height: 15px;
         padding-top: 15px;
         padding-bottom: 20px;
-        padding-left: 10px;
+        padding-left: 20px;
         vertical-align: middle;
         background-color: var(--myBlack);
         color: white;
@@ -178,8 +79,9 @@ footer{
     }
     #sectionDesc{
         margin-top: 0px;
-        width: 95%;
+        width: auto;
         padding-left: 20px;
+        padding-right: 10px;
         font-size: 1.2rem;
         padding-bottom: 20px;
     }
@@ -196,7 +98,7 @@ footer{
     
     footer{
         height: max-content;
-        width: 94%;
+        width: auto;
         background-color: var(--myBrown);
         color: var(--myBlack);
         display: flex;
@@ -221,7 +123,10 @@ footer{
     }
     #social{
         width: 65%;
+        margin: 30px;
         margin-left: 0px;
+        padding-left: 0px;
+        text-align: left;
     }
     #social img{
         width: 25px;

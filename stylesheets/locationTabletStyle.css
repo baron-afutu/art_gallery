@@ -1,0 +1,68 @@
+@media (max-width: 1024px){
+    .tablet{
+        display: block !important;
+    }
+    .mobile{
+        display: none !important;
+    }
+    .desktop{
+        display: none !important;
+    }
+
+
+
+
+    .button1{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        margin-left: 20px;
+        text-decoration: none;
+    }
+    
+    .button1 .arrowInfo{
+        width: 150px;
+        height: 15px;
+        padding-top: 15px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        vertical-align: middle;
+        background-color: var(--myBlack);
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: monospace;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    
+    .arrow{
+        width: 10px;
+        height: 15px;
+        padding-top: 18px;
+        padding-bottom: 17px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: var(--myBrown);
+    }
+    
+    
+    
+    
+    
+    #map{
+        width: 100%;
+    }
+
+    #sectionTitle{
+        margin-left: 20px;
+        width: 40%;
+    }
+    #sectionDesc{
+        width: 58%;
+    }
+
+    #footerTitle h1{
+        margin-left: 20px;
+    }
+}
