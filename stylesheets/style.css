@@ -19,7 +19,7 @@ body{
 }
 
 main{
-    width: var(--fullWidth);
+    width: 100%;
     margin: auto;
     background-color: white;
 }
@@ -36,7 +36,7 @@ header{
 
 #leftSide{
     background-color: var(--myBlack);
-    width: calc(0.3* var(--fullWidth));
+    width: 1000px; /*calc(0.3* var(--fullWidth));*/
     min-width: 0px;
 }
 #rightSid{
@@ -45,7 +45,7 @@ header{
     min-width: 0px;
 }
 .heroImage{
-    min-width: calc(0.3* var(--fullWidth));
+    min-width: 600px;
     max-width: var(--fullWidth);
     background-color: white;
 }
@@ -69,7 +69,7 @@ header{
     font-weight: bold !important;
     text-transform: uppercase;
     width: max-content;
-    margin-left: calc(0.117* var(--fullWidth));
+    margin-left: 220px;
     height: fit-content;
     background-image: linear-gradient(90deg, white 63%,black 45%);
     background-clip: content-box;
@@ -81,7 +81,7 @@ header{
 
 .right{
     width: 300px;
-    margin-left: 260px;
+    margin-left: 400px;
     margin-top: 55px;
 }
 
@@ -123,13 +123,14 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 100px;
+    margin: 200px;
+    margin-top: 50px;
     margin-bottom: 20px;
 }
 #bottomRow{
     display: flex;
     flex-direction: row;
-    margin: 100px;
+    margin: 200px;
     margin-top: 20px;
 }
 #rightSide{
@@ -142,7 +143,7 @@ header{
     width: calc(0.44* var(--fullWidth));
 }
 .imageGrid3{
-    width: calc(0.375* var(--fullWidth));
+    width: calc(0.435* var(--fullWidth));
 }
 
 #textArea h1{
@@ -164,7 +165,7 @@ header{
     padding-top: 0px;
     margin-top: 20px;
     height: 320px;
-    width: calc(0.29* var(--fullWidth));
+    width: calc(0.35* var(--fullWidth));
 }
 #textB h1{
     text-transform: uppercase;
@@ -175,7 +176,7 @@ header{
 
 footer{
     height: 200px;
-    width: var(--fullWidth);
+    width: 100%;
     background-color: var(--myBlack);
     color: white;
     display: flex;
@@ -192,14 +193,14 @@ footer{
     font-family: 'Big Shoulders Display';
     font-size: 36px;
     line-height: 36px;
-    margin-left: 100px;
+    margin-left: 200px;
 }
 #footerDesc{
     margin-top: 20px;
 }
 #social{
     width: calc(0.4* var(--fullWidth));
-    margin-right: 100px;
+    margin-right: 200px;
     text-align: right;
 }
 #social i{
@@ -207,4 +208,12 @@ footer{
 }
 #social i:hover{
    color: var(--myBrown);
+   cursor: pointer;
+}
+
+.hover-to-brown{
+    background-color: var(--myBrown) !important;
+}
+.hover-to-black{
+    background-color: var(--myBlack) !important;
 }

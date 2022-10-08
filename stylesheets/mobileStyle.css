@@ -180,10 +180,3 @@
     }
 
 }
-
-.hover-to-brown{
-    background-color: var(--myBrown) !important;
-}
-.hover-to-black{
-    background-color: var(--myBlack) !important;
-}

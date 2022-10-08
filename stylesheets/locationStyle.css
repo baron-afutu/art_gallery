@@ -99,4 +99,5 @@ footer{
 }
 #social i:hover{
     color: white;
+    cursor: pointer;
 }
