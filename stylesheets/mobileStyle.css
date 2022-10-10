@@ -29,6 +29,7 @@
         display: none;
     }
     .heroImage{
+        min-width: 100px;
         width: 100%;
     }
 
@@ -42,8 +43,8 @@
         height: fit-content;
         padding-top: 0px;
         margin-left: 20px;
-        padding-right: 10px;
-        width: 95%;
+        padding-right: 0px;
+        width: 90%;
     }
     
     #title{
@@ -170,6 +171,7 @@
     #footerDesc{
         margin-top: 20px;
         margin-left: 20px;
+        margin-right: 10px;
         font-size: 1.2em;
     }
     #social{

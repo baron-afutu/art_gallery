@@ -137,13 +137,19 @@ header{
     display: flex;
     flex-direction: column;
     margin-left: 20px;
-    width: 45%;
+    width: 55%;
+}
+.imageGrid1{
+    width: calc(0.5* var(--fullWidth));
 }
 .imageGrid2{
     width: calc(0.44* var(--fullWidth));
+    max-width: 435px;
 }
 .imageGrid3{
-    width: calc(0.435* var(--fullWidth));
+    /* width: calc(0.435* var(--fullWidth));
+    max-width: 510px; */
+    width: 100%;
 }
 
 #textArea h1{
@@ -165,7 +171,7 @@ header{
     padding-top: 0px;
     margin-top: 20px;
     height: 320px;
-    width: calc(0.35* var(--fullWidth));
+    /* width: calc(0.35* var(--fullWidth)); */
 }
 #textB h1{
     text-transform: uppercase;
